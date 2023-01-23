@@ -65,6 +65,7 @@ for map in $(find . -name '*.js.map' -not -path './node_modules/*' -not -path '.
              -H "Authorization: Bearer ${SENTRY_AUTH_TOKEN}" \
              -F file=@"${map}" \
              -F name="${name}" \
+             -F dist="1" \
              >/dev/null
 
     elif [[ "${res[1]}" != "${sum}" ]]; then
