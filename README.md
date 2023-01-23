@@ -10,6 +10,7 @@ Define the following configuration variables within Herkou app. See [Heroku Docu
 - `SENTRY_ORG`: the Sentry organization the project lives under
 - `SENTRY_PROJECT`: the Sentry project the source maps belong too
 - `SENTRY_APP_VERSION`: the release name to be used for Sentry
+- `SOURCE_MAP_FOLDER`: (Optional) the folder where the source maps are located, relative to root
 
 ## Getting Sentry Auth Token
 
