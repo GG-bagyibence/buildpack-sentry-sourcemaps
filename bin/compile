@@ -36,7 +36,7 @@ curl -sSf "${API}/releases/" \
 # Delete exisitng files
 echo "-----> Deleting existing files for the release"
 
-curl -sSF "${API}/files/source-maps/?name=${SENTRY_APP_VERSION}" \
+curl -sSf "${API}/files/source-maps/?name=${SENTRY_APP_VERSION}" \
   -X DELETE \
   -H "Authorization: Bearer ${SENTRY_AUTH_TOKEN}" \
   >/dev/null
